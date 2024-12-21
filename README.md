@@ -14,14 +14,14 @@ This project analyzes the Obesity dataset to predict and understand patterns of 
      - **Age, Height, Weight, Gender, Obesity levels, Smoking habits, and more**.
    - Key preprocessing steps:
      1. **Calculated BMI**: Derived from height and weight using the formula:  
-        \[
-        BMI = \frac{\text{Weight (kg)}}{\text{Height (m)}^2}
-        \]  
+     
+        BMI =[ weight/(Height^2) ]
+
         BMI categories (underweight, healthy, overweight, obese) were derived for further analysis.
-     2. **Feature Recoding**:
+     3. **Feature Recoding**:
         - `MTRANS` recoded to group all transportation-related categories into "Transportation."
         - `Obesity` recoded to group various obesity levels into a single category called "Obese."
-     3. Split the dataset into training and validation sets using a random seed of `888` for reproducibility.
+     4. Split the dataset into training and validation sets using a random seed of `888` for reproducibility.
 
 ### 2. **Modeling Approaches**
    - Multiple machine learning models were built to predict BMI and classify obesity levels.
